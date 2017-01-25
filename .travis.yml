@@ -19,6 +19,6 @@ script:
 
 after_success:
  - echo "Deploying ..."
- - firebase deploy --project webtechlab-e9cc8 --public . --token=${FIREBASE_TOKEN}
+ - firebase deploy --project personalwebpage-2bb64 --public . --token=${FIREBASE_TOKEN}
 
 
