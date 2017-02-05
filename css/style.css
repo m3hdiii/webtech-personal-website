@@ -279,10 +279,19 @@ section.portfolio p.lead > b {
     font-size: 26px;
 }
 
-section.portfolio hr {
-    clear: both;
-    border: 1px solid lemonchiffon;
+.margin-top{
+    margin-top: 20px;
+}
+
+section.portfolio .hr-form {
+    display: block;
+    margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border-style;*/
+    border-top: 1px solid lemonchiffon;
+    clear: both;
 }
 
 section.portfolio button {
@@ -328,7 +337,7 @@ section.portfolio .project-2:hover {
     background-position: 0px -205px;
 }
 
-.job-skill-ul > p{
+.job-skill-ul{
 font-size: 14px !important;
     /*line-height: 5px !important;*/
 }
