@@ -1,5 +1,7 @@
-/* Reset */
-html, body, nav, header, main, footer, section, aside, h1, h2, h3, h4, p, ul, li, a, button{
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+html, body, nav, header, main, footer, section, aside, h1, h2, h3, h4, p, ul, li, a, button {
+    font-family: 'Indie Flower', cursive;
     margin: 0;
     padding: 0;
     border: 0;
@@ -12,130 +14,149 @@ html, body, nav, header, main, footer, section, aside, h1, h2, h3, h4, p, ul, li
 }
 
 /* Generic */
-div.center{
+div.center {
     width: 960px;
     margin: 0 auto;
 }
-.active{
+
+.active {
     color: gold;
 }
+
 .clearfix {
     overflow: auto;
 }
-body{
-    background-color: lemonchiffon;
+
+body {
+    background-color: #90bcbb;
 }
 
 /* Header */
 
 .primary-header {
-    background: linear-gradient(180deg, wheat, lemonchiffon);
+    background: linear-gradient(180deg, #4fa4cf, #90bcbb);
     padding: 60px 0;
     text-align: center;
 }
+
 .primary-header h1 {
-    color: firebrick;
-    font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    color: rgba(26, 59, 84, 0.74);
+    font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-weight: bold;
     font-size: 42px;
+    text-shadow: 2px 2px cadetblue;
 }
-.primary-header h1>span{
+
+.primary-header h1 > span {
     font-size: 50px;
 }
+
 .secondary-header {
-    background-color: firebrick;
+    background-color: rgba(73, 86, 81, 0.58);
     color: ghostwhite;
     padding: 15px;
     margin-bottom: 45px;
 }
-.left, .right{
+
+.left, .right {
     display: inline-block;
 }
-.left{
+
+.left {
     width: 480px;
     text-align: right;
     padding: 15px;
 }
-.left>h2{
-    font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+.left > h2 {
+    font-family: "Helvetica Neue", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 24px;
     font-weight: 300;
     font-style: italic;
     line-height: 30px;
 }
-.left>h2>strong{
+
+.left > h2 > strong {
     font-weight: 400;
 }
-.right{
-    box-shadow:
-            -1px 0 0 #eee,
-            -2px 0 0 #999;
+
+.right {
+    box-shadow: -1px 0 0 #eee,
+    -2px 0 0 #999;
     padding: 15px;
 }
-.right li{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+.right li {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 26px;
 }
-nav a:hover{
+
+nav a:hover {
     font-style: italic;
     color: gold;
 }
 
 /* Main */
 
-main{
+main {
     width: 960px;
     margin: 0 auto;
 }
-main>section{
+
+main > section {
     margin-bottom: 45px;
 }
-section header{
+
+section header {
     text-align: center;
 }
-section header h3{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+section header h3 {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 15px;
     text-shadow: 1px 1px 1px #666;
 }
-section div.content{
+
+section div.content {
     background-color: #fff;
-    border: 6px solid navajowhite;
+    border: 6px solid #448ca0;
     padding: 30px;
 }
 
-
 /* Footer */
 
-footer{
-    background-color: #a6761e;
-    border-top: 3px solid #805d1b;
+footer {
+    background-color: rgba(73, 86, 81, 0.58);
+    border-top: 3px solid #448ca0;
     color: #ffffff;
     text-align: center;
     padding: 15px;
 }
-footer>ul>li{
+
+footer > ul > li {
     display: inline-block;
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 14px;
     line-height: 12px;
     font-weight: 400;
 }
-footer>ul>li.separator{
+
+footer > ul > li.separator {
     font-size: 9px;
 }
-footer>ul>li>a:hover{
+
+footer > ul > li > a:hover {
     color: firebrick;
     text-decoration: underline;
 }
 
 /* About Me - Introduction */
 
-section.introduction div.content p{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+section.introduction div.content p {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 15px;
@@ -144,44 +165,52 @@ section.introduction div.content p{
 
 /* About Me - Courses */
 
-section.courses li{
+section.courses li {
     padding: 9px 0 9px 9px;
 }
-section.courses li img{
+
+section.courses li img {
     height: 90px;
     padding: 0 10px;
 }
-section.courses li:nth-child(odd) img{
+
+section.courses li:nth-child(odd) img {
     float: left;
 }
-section.courses li:nth-child(even) img{
+
+section.courses li:nth-child(even) img {
     float: right;
 }
-section.courses li:nth-child(even){
+
+section.courses li:nth-child(even) {
     background-color: lightyellow;
     text-align: right;
 }
-section.courses li a{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+section.courses li a {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 22px;
     line-height: 45px;
 }
-section.courses li a:hover{
+
+section.courses li a:hover {
     text-decoration: underline;
     color: firebrick;
 }
 
 /* About Me - Skills */
 
-section.skills ul{
+section.skills ul {
     margin-bottom: 15px;
 }
-section.skills ul:last-child{
+
+section.skills ul:last-child {
     margin-bottom: 0;
 }
-li.skill{
+
+li.skill {
     display: inline-block;
-    background: linear-gradient(180deg, firebrick, #d42020);
+    background: linear-gradient(180deg, rgba(49, 68, 83, 0.9), rgba(32, 73, 83, 0.9));
     padding: 15px;
     width: 125px;
     height: 40px;
@@ -189,29 +218,34 @@ li.skill{
     text-align: center;
     color: #fff;
 }
-li.skill:last-child{
+
+li.skill:last-child {
     margin-right: 0;
 }
+
 li.skill strong {
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
 }
-section.skills ul.stars{
+
+section.skills ul.stars {
     margin-top: 6px;
     color: gold;
 }
-section.skills ul.stars li{
+
+section.skills ul.stars li {
     display: inline;
 }
 
 /* My Portfolio - Projects */
 
-section.portfolio>.content{
-    height: 800px;
+section.portfolio > .content {
+    height: 900px;
 }
-section.portfolio li>div {
+
+section.portfolio li > div {
     height: 300px;
     width: 400px;
     border: 3px solid #111;
@@ -220,65 +254,133 @@ section.portfolio li>div {
     padding: 5px;
     margin: 0px 20px 20px 0;
 }
+
 section.portfolio p {
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     padding: 10px;
     line-height: 20px;
     font-weight: 400;
 }
-section.portfolio p.lead{
+
+section.portfolio p.lead {
     font-size: 20px;
     line-height: 30px;
 }
-section.portfolio p.desc{
+
+section.portfolio p.desc {
     font-size: 18px;
     line-height: 20px;
     font-weight: 300;
     text-align: justify;
 }
-section.portfolio p.lead>b{
+
+section.portfolio p.lead > b {
     font-size: 26px;
 }
-section.portfolio hr{
+
+section.portfolio hr {
     clear: both;
     border: 1px solid lemonchiffon;
     margin-bottom: 20px;
 }
-section.portfolio button{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+section.portfolio button {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     padding: 6px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 600;
     border-radius: 10px;
-    color: #ff4000;
-    background: linear-gradient(180deg,#f9e057,#ffd700,#ffe661);
+    color: #eeeeee;
+    background: linear-gradient(180deg, #4fa4cf, rgba(34,112,108,0.9), rgba(17,90,112,0.9));
 }
-section.portfolio button:hover{
+
+section.portfolio button:hover {
     cursor: pointer;
-    background: linear-gradient(180deg,#dd2b2b,firebrick,#dd2b2b);
+    background: linear-gradient(180deg, rgba(70,103,112,0.43), rgba(24,39,66,0.64), rgba(1,3,28,0.64));
     color: #fff;
 }
-section.portfolio .project-1{
+
+section.portfolio .project-1 {
     background-image: url(../img/1st-Project.jpg);
     background-size: cover;
     background-position: 0px 0px;
     transition: all 3s ease;
 }
-section.portfolio .project-1:hover{
+
+section.portfolio .project-1:hover {
     background-image: url(../img/1st-Project.jpg);
     background-size: cover;
     background-position: 0px -630px;
 }
-section.portfolio .project-2{
+
+section.portfolio .project-2 {
     background-image: url(../img/2nd-Project.jpg);
     background-size: cover;
     background-position: 0px 0px;
     transition: all 2s ease;
 }
-section.portfolio .project-2:hover{
+
+section.portfolio .project-2:hover {
     background-image: url(../img/2nd-Project.jpg);
+    background-size: cover;
+    background-position: 0px -205px;
+}
+
+.job-skill-ul > p{
+font-size: 14px !important;
+    /*line-height: 5px !important;*/
+}
+
+section.portfolio .english-cert {
+    background-image: url(../img/IELTS.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    transition: all 2s ease;
+}
+
+section.portfolio .english-cert:hover {
+    background-image: url(../img/IELTS.jpg);
+    background-size: cover;
+    background-position: 0px -205px;
+}
+
+section.portfolio .german-cert {
+    background-image: url(../img/goethe.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    transition: all 2s ease;
+}
+
+section.portfolio .german-cert:hover {
+    background-image: url(../img/goethe.jpg);
+    background-size: cover;
+    background-position: 0px -205px;
+}
+
+section.portfolio .behin-co {
+    background-image: url(../img/behin-co.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    transition: all 2s ease;
+}
+
+section.portfolio .behin-co:hover {
+    background-image: url(../img/behin-co.jpg);
+    background-size: cover;
+    background-position: 0px -205px;
+}
+
+section.portfolio .dml-co {
+    background-image: url(../img/dml-co.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    transition: all 2s ease;
+}
+
+section.portfolio .dml-co:hover {
+    background-image: url(../img/dml-co.jpg);
     background-size: cover;
     background-position: 0px -205px;
 }
@@ -286,14 +388,14 @@ section.portfolio .project-2:hover{
 /* Request Quote */
 
 section.quote form {
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
 }
 
 section.quote p {
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
@@ -304,22 +406,26 @@ section.quote fieldset {
     padding: 25px;
     margin-bottom: 25px;
 }
+
 section.quote fieldset legend {
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 26px;
     font-weight: 100;
 }
+
 section.quote input {
     font-size: 22px;
     border-radius: 6px;
     padding: 5px;
     width: 830px;
 }
+
 section.quote input[type=radio], section.quote input[type=tel], section.quote input[type=number], section.quote input[type=date], section.quote input[type=checkbox] {
     width: auto;
 }
-section.quote textarea{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+section.quote textarea {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     font-weight: 300;
@@ -329,23 +435,25 @@ section.quote textarea{
     height: 300px;
 }
 
-section.quote input[type=submit]{
+section.quote input[type=submit] {
     width: auto;
     border: 0;
     margin: 15px 0;
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     padding: 12px;
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
-    color: #ff4000;
-    background: linear-gradient(180deg,#f9e057,#ffd700,#ffe661);
+    color: #eeeeee;
+    background: linear-gradient(180deg, #4fa4cf, rgba(34,112,108,0.9), rgba(17,90,112,0.9));
 }
-section.quote input[type=submit]:hover{
+
+section.quote input[type=submit]:hover {
     cursor: pointer;
-    background: linear-gradient(180deg,#dd2b2b,firebrick,#dd2b2b);
+    background: linear-gradient(180deg, rgba(70,103,112,0.43), rgba(24,39,66,0.64), rgba(1,3,28,0.64));
     color: #fff;
 }
+
 section.quote div.submit {
     text-align: center;
 }
@@ -353,30 +461,33 @@ section.quote div.submit {
 /* Contact Me */
 
 section.contact form {
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
 }
-section.contact button[type=submit]{
+
+section.contact button[type=submit] {
     width: auto;
     border: 0;
     margin: 15px 0;
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     padding: 20px;
     font-size: 20px;
     font-weight: 600;
     border-radius: 10px;
-    color: #ff4000;
-    background: linear-gradient(180deg,#f9e057,#ffd700,#ffe661);
+    color: #eeeeee;
+    background: linear-gradient(180deg, #4fa4cf, rgba(34,112,108,0.9), rgba(17,90,112,0.9));
 }
-section.contact button[type=submit]:hover{
+
+section.contact button[type=submit]:hover {
     cursor: pointer;
-    background: linear-gradient(180deg,#dd2b2b,firebrick,#dd2b2b);
+    background: linear-gradient(180deg, rgba(70,103,112,0.43), rgba(24,39,66,0.64), rgba(1,3,28,0.64));
     color: #fff;
 }
-section.contact textarea{
-    font-family: "Helvetica Neue", "Helvetica","Arial","sans-serif";
+
+section.contact textarea {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 18px;
     line-height: 20px;
     font-weight: 300;
@@ -385,12 +496,14 @@ section.contact textarea{
     width: 830px;
     height: 300px;
 }
+
 section.contact input {
     font-size: 22px;
     border-radius: 6px;
     padding: 5px;
     width: 410px;
 }
-section.contact div.submit{
+
+section.contact div.submit {
     text-align: center;
 }
